@@ -10,6 +10,13 @@ public class Mycontroller {
 	
 	@Autowired
 	Serviceinterface ssi;
+
+	@PostMapping("/save")
+	public Student savedata(@RequestBody Student s)
+	{
+		ssi.save(s);
+
+	}
 	
 	
 
